@@ -25,6 +25,16 @@
 		document.getElementsByTagName( 'head' )[0].appendChild( link );
 	</script>
 
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?279ccc74be936b70b9f10bc796bbcd3a";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
 	<![endif]-->
@@ -45,8 +55,70 @@
 				####
 
 				<br />
-				[by CharlesCui](https://twitter.com/)
+				[by CharlesCui](https://www.zhihu.com/people/cui-zheng-83/activities)
 
+			</script>
+		</section>
+
+		<section data-markdown data-separator="---" data-separator-vertical="--">
+			<script type="text/template">
+				## 电视淘宝
+
+				#### 电视屏上最大的购物平台，阿里集团旗下，PC、手机之外的又一屏。
+				--
+				## 首页
+
+				<img src="./public/img/tvtao/shouye.jpg" class="img-responsive img-center">
+
+				--
+				## 话费充值
+
+				<img src="./public/img/tvtao/huafeichongzhi.jpg" class="img-responsive img-center">
+
+				--
+				## 淘宝直播
+
+				<img src="./public/img/tvtao/taobaozhibo.jpg" class="img-responsive img-center">
+
+				--
+				## 天猫直播
+
+				<img src="./public/img/tvtao/tianmaozhibo.jpg" class="img-responsive img-center">
+
+				--
+				## 聚划算
+
+				<img src="./public/img/tvtao/juhuasuan.jpg" class="img-responsive img-center">
+
+				--
+				## 天猫超市
+
+				<img src="./public/img/tvtao/tianmaochaoshi.jpg" class="img-responsive img-center">
+
+				--
+				## 活动会场
+
+				<img src="./public/img/tvtao/huichang.jpg" class="img-responsive img-center">
+
+				--
+				## 店铺详情
+
+				<img src="./public/img/tvtao/dianpuxiangqing.jpg" class="img-responsive img-center">
+
+				--
+				## 商品详情
+
+				<img src="./public/img/tvtao/shangpinxiangqing.jpg" class="img-responsive img-center">
+
+				--
+				## 购物车
+
+				<img src="./public/img/tvtao/gouwuche.jpg" class="img-responsive img-center">
+
+				--
+				## 账号设置
+
+				<img src="./public/img/tvtao/zhanghao.jpg" class="img-responsive img-center">
 			</script>
 		</section>
 
@@ -64,28 +136,6 @@
 				[<i class="fa fa-github" aria-hidden="true"></i>/charlescui](https://github.com/charlescui)<br />
 				[<i class="fa fa-pencil" aria-hidden="true"></i> CharlesCui](http://cuiz.me)
 
-			</script>
-		</section>
-
-		<section data-markdown data-separator="---" data-separator-vertical="--">
-			<script type="text/template">
-				## 电视淘宝
-
-				#### 电视屏上最大的购物平台，阿里集团旗下，PC、手机之外的又一屏。
-				--
-				## 商品详情
-
-				<img src="./public/img/tvtao/shangpinxiangqing.jpg" class="img-responsive img-center">
-
-				--
-				## 店铺详情
-
-				<img src="./public/img/tvtao/dianpuxiangqing.jpg" class="img-responsive img-center">
-
-				--
-				## 会场
-
-				<img src="./public/img/tvtao/huichang.png" class="img-responsive img-center">
 			</script>
 		</section>
 
@@ -132,24 +182,5 @@
 		});
 
 	</script>
-    <!-- Socket.io client-->
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-            (function(){
-              Reveal.initialize({
-                history: true
-              });
-
-              var proto = window.location.protocol;
-              var h = window.location.host;
-              var val = proto+'//'+h;
-              console.log(val);
-              var socket = io.connect(val);
-              socket.on('slidechanged', function (data) {
-                Reveal.slide(data.indexh, data.indexv, data.indexf);
-              });
-
-            })();
-        </script>
 </body>
 </html>
